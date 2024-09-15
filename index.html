@@ -6,13 +6,13 @@
     <meta name="description" content="VinceCXD - Gaming Content and Resource Packs">
     <title>VinceCXD - Gaming Packs</title>
     <style>
-        /* General styling */
+        /* General styling - black and white theme */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #121212;
-            color: #e0e0e0;
+            background-color: #000; /* Black background */
+            color: #fff; /* White text */
         }
 
         h1, h2 {
@@ -20,23 +20,25 @@
         }
 
         a {
-            color: #1e90ff;
+            color: #fff; /* White links */
             text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.3s;
         }
 
         a:hover {
-            color: #ff4757;
+            border-bottom: 1px solid #fff;
         }
 
         /* Header styling */
         header {
-            background-color: #1c1c1c;
+            background-color: #111; /* Darker background */
             padding: 20px;
             text-align: center;
         }
 
         header h1 {
-            font-size: 2.5rem;
+            font-size: 2rem;
             letter-spacing: 2px;
         }
 
@@ -47,30 +49,47 @@
             position: fixed;
             top: 0;
             left: 0;
-            background-color: #202020;
+            background-color: #1a1a1a;
             padding-top: 20px;
-            overflow-x: hidden;
+            overflow-y: auto; /* Fix overflow for smaller screens */
         }
 
         .sidenav a {
-            padding: 10px 20px;
+            padding: 15px 20px;
             display: block;
-            font-size: 18px;
+            font-size: 1rem;
+            text-transform: uppercase;
         }
 
         .sidenav a:hover {
             background-color: #333;
         }
 
-        /* Main content */
+        /* Main content styling */
         .main-content {
             margin-left: 270px;
             padding: 20px;
+            max-width: 1200px; /* Limit width to prevent oversized content */
         }
 
-        /* Footer */
+        /* Responsive design: adjust for smaller screens */
+        @media screen and (max-width: 768px) {
+            .sidenav {
+                width: 200px; /* Shrink sidebar */
+            }
+
+            .main-content {
+                margin-left: 220px; /* Adjust content margin */
+            }
+
+            header h1 {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* Footer styling */
         footer {
-            background-color: #1c1c1c;
+            background-color: #111;
             text-align: center;
             padding: 10px;
             position: fixed;
@@ -89,7 +108,6 @@
 
     <div class="sidenav">
         <h2>My Videos</h2>
-        <!-- Replace these with your video titles and links -->
         <a href="https://youtu.be/eCDrH0ERGx4?si=Z0cnpgVXdrt7DpyE" target="_blank">Void V4</a>
         <a href="https://youtu.be/C7aaaAxaoAc?si=SdqvI8KdGd80DfYV" target="_blank">Void V3</a>
         <a href="https://youtu.be/o7P-66klE70?si=qoHvvLuLQnnSIL0z" target="_blank">Void V2</a>
@@ -110,4 +128,4 @@
     </footer>
 
 </body>
-      </html>
+</html>
