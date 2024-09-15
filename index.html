@@ -3,129 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="VinceCXD - Gaming Content and Resource Packs">
-    <title>VinceCXD - Gaming Packs</title>
+    <title>VinceCXD Content Downloads</title>
     <style>
-        /* General styling - black and white theme */
-        body {
-            font-family: 'Arial', sans-serif;
+        /* Basic reset and styles */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and background setup */
+        body {
+            font-family: Arial, sans-serif;
             background-color: #000; /* Black background */
-            color: #fff; /* White text */
-        }
-
-        h1, h2 {
+            background-image: url('YOUR_BACKGROUND_IMAGE_URL'); /* Optional background image */
+            background-size: cover;
             color: #fff;
-        }
-
-        a {
-            color: #fff; /* White links */
-            text-decoration: none;
-            border-bottom: 1px solid transparent;
-            transition: border-bottom 0.3s;
-        }
-
-        a:hover {
-            border-bottom: 1px solid #fff;
-        }
-
-        /* Header styling */
-        header {
-            background-color: #111; /* Darker background */
-            padding: 20px;
             text-align: center;
         }
 
-        header h1 {
-            font-size: 2rem;
-            letter-spacing: 2px;
-        }
-
-        /* Side menu styling */
-        .sidenav {
-            height: 100%;
-            width: 250px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            background-color: #1a1a1a;
-            padding-top: 20px;
-            overflow-y: auto; /* Fix overflow for smaller screens */
-        }
-
-        .sidenav a {
-            padding: 15px 20px;
-            display: block;
-            font-size: 1rem;
-            text-transform: uppercase;
-        }
-
-        .sidenav a:hover {
-            background-color: #333;
-        }
-
-        /* Main content styling */
-        .main-content {
-            margin-left: 270px;
+        /* Transparent container */
+        .container {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+            border: 2px solid red;
+            border-radius: 10px;
             padding: 20px;
-            max-width: 1200px; /* Limit width to prevent oversized content */
+            margin: 20px auto;
+            max-width: 1200px;
         }
 
-        /* Responsive design: adjust for smaller screens */
-        @media screen and (max-width: 768px) {
-            .sidenav {
-                width: 200px; /* Shrink sidebar */
-            }
+        /* Header design */
+        header {
+            padding: 20px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 5px red; /* Red shadow for text */
+        }
 
-            .main-content {
-                margin-left: 220px; /* Adjust content margin */
-            }
+        /* Download grid layout */
+        .download-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
 
-            header h1 {
-                font-size: 1.5rem;
-            }
+        /* Individual download container */
+        .download {
+            background-color: rgba(0, 0, 0, 0.5); /* More transparency */
+            border: 2px solid red;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        /* Download button styling */
+        .download a {
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            background-color: red;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+
+        .download a:hover {
+            background-color: #ff4c4c;
         }
 
         /* Footer styling */
-        footer {
-            background-color: #111;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        .footer {
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent */
+            padding: 20px;
+            font-size: 1em;
+            border-top: 2px solid red;
         }
     </style>
 </head>
 <body>
-
-    <header>
-        <h1>Welcome to VinceCXD's Gaming World</h1>
-        <p>Subscribe to my YouTube Channel for epic content!</p>
-        <a href="https://www.youtube.com/@VinceCXD" target="_blank">Check out my YouTube Channel</a>
-    </header>
-
-    <div class="sidenav">
-        <h2>My Videos</h2>
-        <a href="https://youtu.be/eCDrH0ERGx4?si=Z0cnpgVXdrt7DpyE" target="_blank">Void V4</a>
-        <a href="https://youtu.be/C7aaaAxaoAc?si=SdqvI8KdGd80DfYV" target="_blank">Void V3</a>
-        <a href="https://youtu.be/o7P-66klE70?si=qoHvvLuLQnnSIL0z" target="_blank">Void V2</a>
-        <a href="https://youtu.be/ppi0tsc9ozk?si=UY428jNAsnMmy7MS" target="_blank">Void V1</a>
-        <a href="https://www.youtube.com/@VinceCXD" target="_blank">More Videos on My YouTube</a>
-    </div>
-
-    <div class="main-content">
-        <h2>About VinceCXD</h2>
-        <p>Hey gamers! Welcome to my channel, where I post exclusive gaming content, tutorials, and share custom resource packs to enhance your gaming experience. From FPS shooters to Minecraft, I've got everything a gamer needs!</p>
+    <!-- Container for page content -->
+    <div class="container">
+        <header>
+            VinceCXD Content Downloads
+        </header>
         
-        <h2>Featured Content</h2>
-        <p>Be sure to check out my latest videos and downloadable gaming resources directly from the side menu. Stay tuned for more exciting updates!</p>
+        <!-- Download grid -->
+        <div class="download-grid">
+            <!-- Replace the following download links with your actual URLs -->
+            <div class="download">
+                <p>Download Void V4</p>
+                <a href="https://linkpays.in/KX8i7g" download>Download Now</a>
+            </div>
+            <div class="download">
+                <p>Download Novidia</p>
+                <a href="https://linkpays.in/AcDD2" download>Download Now</a>
+            </div>
+            <div class="download">
+                <p>Download Exo Boost</p>
+                <a href="https://linkpays.in/FY2X0U" download>Download Now</a>
+            </div>
+            <!-- Add more download sections as needed -->
+        </div>
+
+        <!-- Footer section -->
+        <div class="footer">
+            &copy; 2024 VinceCXD - All rights reserved.
+        </div>
     </div>
-
-    <footer>
-        <p>© 2024 VinceCXD - All Rights Reserved</p>
-    </footer>
-
 </body>
 </html>
