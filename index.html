@@ -3,168 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VinceCXD Packs Download</title>
+    <title>VinceDaOne's Download Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
     <style>
-        /* Basic reset and styles */
-        * {
+        body {
+            font-family: 'Press Start 2P', cursive;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            background-color: #000;
+            color: #fff;
+            transition: background-color 0.5s, color 0.5s;
         }
-
-        /* Root variables for light and dark themes */
-        :root {
-            --background-color: #000;
-            --text-color: #fff;
-            --container-bg: rgba(0, 0, 0, 0.7);
-            --border-color: red;
-            --box-shadow-color: rgba(255, 255, 255, 0.5);
-            --download-bg: rgba(0, 0, 0, 0.5);
-            --download-btn-bg: red;
-            --download-btn-hover-bg: #ff4c4c;
-            --footer-bg: rgba(0, 0, 0, 0.8);
-        }
-
-        /* Light theme overrides */
-        .light-mode {
-            --background-color: #fff;
-            --text-color: #000;
-            --container-bg: rgba(255, 255, 255, 0.9);
-            --border-color: #333;
-            --box-shadow-color: rgba(0, 0, 0, 0.5);
-            --download-bg: rgba(255, 255, 255, 0.8);
-            --download-btn-bg: #333;
-            --download-btn-hover-bg: #555;
-            --footer-bg: rgba(255, 255, 255, 0.9);
-        }
-
-        /* Body and background setup */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: var(--background-color);
-            background-image: url('YOUR_BACKGROUND_IMAGE_URL'); /* Optional background image */
-            background-size: cover;
-            color: var(--text-color);
-            text-align: center;
-            transition: background-color 0.5s ease, color 0.5s ease;
-        }
-
-        /* Container with glowing corners */
         .container {
-            background-color: var(--container-bg);
-            border: 2px solid var(--border-color);
-            border-radius: 20px;
             padding: 20px;
-            margin: 20px auto;
-            max-width: 1200px;
-            position: relative;
-            box-shadow: 0 0 20px 10px var(--box-shadow-color);
-            transition: background-color 0.5s ease, box-shadow 0.5s ease;
         }
-
-        /* Header design */
-        header {
-            padding: 20px;
-            font-size: 2.5em;
-            text-shadow: 2px 2px 5px var(--border-color);
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
         }
-
-        /* Download grid layout */
-        .download-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
+        .intro {
+            margin: 20px 0;
+            text-align: center;
         }
-
-        /* Individual download container */
-        .download {
-            background-color: var(--download-bg);
-            border: 2px solid var(--border-color);
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 0 15px var(--box-shadow-color);
-            transition: background-color 0.5s ease, box-shadow 0.5s ease;
+        .buttons {
+            position: fixed;
+            top: 10px;
+            right: 10px;
         }
-
-        /* Download button styling */
-        .download a {
-            display: inline-block;
-            text-decoration: none;
-            color: var(--text-color);
-            background-color: var(--download-btn-bg);
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-size: 1.2em;
-            transition: background-color 0.3s ease;
-        }
-
-        .download a:hover {
-            background-color: var(--download-btn-hover-bg);
-        }
-
-        /* Footer styling */
-        .footer {
-            background-color: var(--footer-bg);
-            padding: 20px;
-            font-size: 1em;
-            border-top: 2px solid var(--border-color);
-            box-shadow: 0 -5px 15px var(--box-shadow-color);
-        }
-
-        /* Toggle button styling */
-        .toggle-theme-btn {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            padding: 10px 20px;
-            background-color: var(--download-btn-bg);
-            color: var(--text-color);
+        .button {
+            background-color: #fff;
+            color: #000;
             border: none;
-            border-radius: 5px;
+            padding: 10px;
+            margin: 5px;
             cursor: pointer;
-            transition: background-color 0.3s ease;
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .link {
+            background-color: #fff;
+            color: #000;
+            border: none;
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+            width: 200px;
+            text-align: center;
+            border-radius: 12px; /* Rounded corners */
+            font-family: 'Press Start 2P', cursive;
+        }
+        .link:hover {
+            background-color: #ddd; /* Lighter color on hover */
         }
     </style>
 </head>
 <body>
-    <!-- Theme toggle button -->
-    <button class="toggle-theme-btn" onclick="toggleTheme()">Toggle Theme</button>
-
-    <!-- Container for page content -->
-    <div class="container">
-        <header>
-            VinceCXD Content Downloads
-        </header>
-        
-        <!-- Download grid -->
-        <div class="download-grid">
-            <!-- Replace the following download links with your actual URLs -->
-            <div class="download">
-                <p>Download Void V4</p>
-                <a href="https://linkpays.in/KX8i7g" download>Download Now</a>
-            </div>
-            <div class="download">
-                <p>Download Novidia</p>
-                <a href="https://linkpays.in/AcDD2" download>Download Now</a>
-            </div>
-            <div class="download">
-                <p>Download Exo Boost</p>
-                <a href="https://linkpays.in/FY2X0U" download>Download Now</a>
-            </div>
-            <!-- Add more download sections as needed -->
-        </div>
-
-        <!-- Footer section -->
-        <div class="footer">
-            &copy; 2024 VinceCXD - All rights reserved.
-        </div>
+    <div class="buttons">
+        <button class="button">Top</button>
+        <button class="button">Bottom</button>
     </div>
 
-    <script>
-        // Function to toggle between light and dark mode
-        function toggleTheme() {
-            document.body.classList.toggle('light-mode');
-        }
-    </script>
+    <div class="container">
+        <div class="header">
+            <h1>VinceDaOne</h1>
+        </div>
+
+        <div class="intro">
+            <p>Void Therapist: If You're Trapped In The Void, Call 119</p>
+        </div>
+
+        <div class="links">
+            <button class="link" onclick="window.location.href='https://youtu.be/eCDrH0ERGx4?si=Ac0GzdTc0Pru3DcG'">Download Void V4</button>
+            <button class="link" onclick="window.location.href='https://youtu.be/C7aaaAxaoAc?si=PPNJOGEWTOo31IsK'">Download Void V3</button>
+            <button class="link" onclick="window.location.href='https://youtu.be/o7P-66klE70?si=RA9nWpFc2LASKtRt'">Download Void V2</button>
+            <button class="link" onclick="window.location.href='https://youtu.be/gfkEviVuPS8?si=gsdlWjU2CvOX6vXr'">Download No Vidia</button>
+            <button class="link" onclick="window.location.href='https://youtu.be/SvsLlOvYAfc?si=D0sWIbxukjKBg3d4'">Download Exo</button>
+        </div>
+    </div>
 </body>
 </html>
